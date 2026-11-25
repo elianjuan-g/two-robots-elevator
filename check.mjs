@@ -7,7 +7,7 @@ import { readFileSync, rmSync } from "node:fs";
 import assert from "node:assert/strict";
 
 const LINE =
-  "I have calculated 47 ways to say hello. I used the worst one. Hello.";
+  "Your proximity sensor has been waving at me for three floors.";
 
 rmSync("/output/entry.txt", { force: true });
 execFileSync(process.execPath, ["main.ts"], { cwd: import.meta.dirname, stdio: "inherit" });
